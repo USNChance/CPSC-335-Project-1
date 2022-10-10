@@ -220,7 +220,6 @@ sorted_disks sort_lawnmower(const disk_state &before)
             numOfSwap++;
           }
       }
-      
       index++;
     }
     while (index > 0) 
@@ -233,7 +232,6 @@ sorted_disks sort_lawnmower(const disk_state &before)
           numOfSwap++;
         }
       }
-
       index--;
     }
   }
