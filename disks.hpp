@@ -212,12 +212,12 @@ sorted_disks sort_lawnmower(const disk_state &before)
     int index = 0;
     while (index + 1 < state.total_count()) 
     {
-		  if (state.get(index) != state.get(index + 1)) 
+      if (state.get(index) != state.get(index + 1)) 
       {
-		      if (state.get(index) == DISK_DARK && state.get(index + 1) == DISK_LIGHT) 
+	  if (state.get(index) == DISK_DARK && state.get(index + 1) == DISK_LIGHT) 
           {
-			      state.swap(index);
-				    numOfSwap++;
+            state.swap(index);
+            numOfSwap++;
           }
       }
       
@@ -227,15 +227,15 @@ sorted_disks sort_lawnmower(const disk_state &before)
     {
       if (state.get(index - 1) != state.get(index)) 
       {
-		      if (state.get(index - 1) == DISK_DARK && state.get(index) == DISK_LIGHT) 
-          {
-		        state.swap(index - 1);
-			      numOfSwap++;
-		      }
-		  }
+	if (state.get(index - 1) == DISK_DARK && state.get(index) == DISK_LIGHT) 
+        {
+          state.swap(index - 1);
+          numOfSwap++;
+        }
+      }
 
-		  index--;
-	  }
+      index--;
+    }
   }
 
   return sorted_disks(disk_state(state), numOfSwap);
