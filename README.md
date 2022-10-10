@@ -3,7 +3,7 @@
 Group members:
 
 Yahya Nashawati
-yahyanashawati@gmail.com
+yahyanashawati@csu.fullerton.edu
 
 Chance Bellon
 Chancebellon@csu.fullerton.edu
