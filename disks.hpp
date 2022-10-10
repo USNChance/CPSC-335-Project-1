@@ -216,10 +216,11 @@ sorted_disks sort_lawnmower(const disk_state &before)
       {
 		      if (state.get(index) == DISK_DARK && state.get(index + 1) == DISK_LIGHT) 
           {
-			    state.swap(index);
-				  numOfSwap++;
-        }
+			      state.swap(index);
+				    numOfSwap++;
+          }
       }
+      
       index++;
     }
     while (index > 0) 
@@ -228,10 +229,11 @@ sorted_disks sort_lawnmower(const disk_state &before)
       {
 		      if (state.get(index - 1) == DISK_DARK && state.get(index) == DISK_LIGHT) 
           {
-		         state.swap(index - 1);
-			       numOfSwap++;
+		        state.swap(index - 1);
+			      numOfSwap++;
 		      }
 		  }
+
 		  index--;
 	  }
   }
